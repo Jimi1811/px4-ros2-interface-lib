@@ -5,7 +5,7 @@
 
 #pragma once
 
-#include <px4_msgs/msg/vehicle_land_detected.hpp>
+#include <px4_msgs/msg/vtol_vehicle_status.hpp>
 #include <px4_ros2/common/context.hpp>
 #include <px4_ros2/odometry/subscription.hpp>
 
@@ -16,14 +16,14 @@ namespace px4_ros2
  */
 
 /**
- * @brief Provides access to the vehicle's status
+ * @brief Provides access to the vtol vehicle's status
  *
  * @ingroup vehicle_state
  */
-class LandDetected : public Subscription<px4_msgs::msg::VehicleLandDetected>
+class VtolStatus : public Subscription<px4_msgs::msg::VtolVehicleStatus>
 {
 public:
-  explicit LandDetected(Context & context);
+  explicit VtolStatus(Context & context);
 
 };
 

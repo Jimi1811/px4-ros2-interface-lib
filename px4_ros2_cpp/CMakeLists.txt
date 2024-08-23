@@ -49,6 +49,11 @@ set(HEADER_FILES
         include/px4_ros2/utils/frame_conversion.hpp
         include/px4_ros2/utils/geodesic.hpp
         include/px4_ros2/utils/geometry.hpp
+        include/px4_ros2/vehicle_state/battery.hpp
+        include/px4_ros2/vehicle_state/home_position.hpp
+        include/px4_ros2/vehicle_state/land_detected.hpp
+        include/px4_ros2/vehicle_state/vehicle_status.hpp
+        include/px4_ros2/vehicle_state/vtol_status.hpp
 )
 
 add_library(px4_ros2_cpp
@@ -75,6 +80,11 @@ add_library(px4_ros2_cpp
         src/odometry/angular_velocity.cpp
         src/utils/geodesic.cpp
         src/utils/map_projection_impl.cpp
+        src/vehicle_state/battery.cpp
+        src/vehicle_state/home_position.cpp
+        src/vehicle_state/land_detected.cpp
+        src/vehicle_state/vehicle_status.cpp
+        src/vehicle_state/vtol_status.cpp
 )
 ament_target_dependencies(px4_ros2_cpp ament_index_cpp Eigen3 rclcpp px4_msgs)
 

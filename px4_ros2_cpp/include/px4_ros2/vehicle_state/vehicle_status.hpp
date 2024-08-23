@@ -5,7 +5,6 @@
 
 #pragma once
 
-#include <Eigen/Eigen>
 #include <px4_msgs/msg/vehicle_status.hpp>
 #include <px4_ros2/common/context.hpp>
 #include <px4_ros2/odometry/subscription.hpp>
